@@ -1,0 +1,10 @@
+{
+  "name": "foxyJumpscare-Editor",
+  "references": [
+    "foxyJumpscare"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}

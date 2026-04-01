@@ -1,0 +1,8 @@
+{
+  "name": "foxyJumpscare",
+  "references": [
+    "GameProxies"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": []
+}

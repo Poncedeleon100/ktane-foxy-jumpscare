@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
+  m_Name: ModConfig
+  m_EditorClassIdentifier: 
+  id: foxyJumpscare
+  title: 1/10000 Chance for Foxy Jumpscare Every Second
+  author: Moon
+  description: "\"Like I said, he was always my favorite...\"\r\n\r\nEvery second
+    of gameplay will roll a 1/10000 chance to play a random Foxy jumpscare from the
+    Five Nights at Freddy's series. As if defusing bombs wasn't already scary enough.
+    Mod settings are available to change the chance, seconds delay, and the available
+    jumpscares. You can also enable it to jumpscare in the menus too if you're into
+    that sort of thing. If there's any bugs, let me know on the Discord at Moon (poncley).\r\n\r\nCredit
+    to Masked Mystery for the idea, Scott Cawthon for making the games, and YMY for
+    making the original mod in tModLoader (https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642)."
+  version: 1.0.0
+  outputFolder: build
+  debugBuild: 1
+  previewImage: {fileID: 2800000, guid: e162a1fe76f34a84e828ed9b5c96ff39, type: 3}
