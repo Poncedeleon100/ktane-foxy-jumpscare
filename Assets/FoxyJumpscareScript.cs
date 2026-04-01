@@ -30,7 +30,8 @@ public class FoxyJumpscareScript : MonoBehaviour
     private bool _isCurrentlyJumpscaring = false;
     // Time in seconds each frame should remain on screen for a 30 FPS jumpscare
     private readonly float _frameDelay = 0.033333f;
-    
+    // Used to keep the SoundObject in the same relative position at all times
+    private Camera mainCamera;
 
     // Mod Settings
     private bool _isActive = true;
@@ -68,6 +69,7 @@ public class FoxyJumpscareScript : MonoBehaviour
         if ((state == SceneManager.State.Gameplay) || (_unrestricted && ((state == SceneManager.State.Setup) || (state == SceneManager.State.PostGame))))
         {
             StartCoroutine(CheckJumpscare());
+            mainCamera = Camera.main;
         }
         else
         {
@@ -83,7 +85,18 @@ public class FoxyJumpscareScript : MonoBehaviour
             if (Random.Range(0, (int)_chance) == 0)
             {
                 StartCoroutine(PlayJumpscare(_activeJumpscares.OrderBy(x => Random.Range(0, 1000)).First()));
+                StartCoroutine(MoveSoundObject());
             }
+        }
+    }
+
+    IEnumerator MoveSoundObject()
+    {
+        while (true)
+        {
+            SoundObject.transform.position = mainCamera.transform.position;
+            SoundObject.transform.rotation = mainCamera.transform.rotation;
+            yield return new WaitForSeconds(Time.deltaTime);
         }
     }
 
