@@ -21,7 +21,8 @@ MonoBehaviour:
     jumpscares. You can also enable it to jumpscare in the menus too if you're into
     that sort of thing. If there's any bugs, let me know on the Discord at Moon (poncley).\r\n\r\nCredit
     to Masked Mystery for the idea, Scott Cawthon for making the games, and YMY for
-    making the original mod in tModLoader (https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642)."
+    making the original mod in tModLoader: https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642\n\nSource
+    code can be found here: https://github.com/Poncedeleon100/ktane-foxy-jumpscare"
   version: 1.1.0
   outputFolder: build
   debugBuild: 1
